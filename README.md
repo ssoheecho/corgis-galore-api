@@ -1,24 +1,15 @@
-# README
+# Corgis Galore
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This is the API side of the app Corgis Galore. You'll need to have this running for the client side to work. The client repository can be found [here!](https://github.com/soheecho94/corgis-galore-client)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Please make sure you have Ruby and Rails set up in your environment.
 
-* Configuration
+To get the API running, please run `rails s -p 3001`. If you just run `rails s` please make sure that the client side is running on a different port and not p 3000.
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) 2017 Sohee Cho. Full license [here](https://github.com/soheecho94/corgis-galore-api/blob/master/LICENSE.md).
