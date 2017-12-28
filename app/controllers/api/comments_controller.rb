@@ -13,8 +13,21 @@ class Api::CommentsController < ApplicationController
     end
   end
 
+  def update
+    @comment = Comment.find_by(id: params[:id])
+    if @comment.update(updatecomment_params)
+      render json: @comment
+    else
+      render json: { errors: { message: "FAILED TO POST COMMENT"}}
+    end
+  end
+
   private
     def comment_params
       params.require(:comment).permit(:content, :corgi_id)
+    end
+
+    def updatecomment_params
+      params.require(:comment).permit(:likes)
     end
 end
